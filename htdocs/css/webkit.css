@@ -1,0 +1,22 @@
+/*
+	My Website
+	WEBKIT TARGETTING STYLE SHEET
+	
+	Properties defined in this stylesheet using the selector 
+	provided will only effect rendering in WebKit based browsers
+	like Safari, Shiira, etc. Replace the ___ with your own 
+	selector and ... with your properties.
+	
+	Hack is valid CSS 3 and works as of 05/07/07
+	
+	Thanks to http://thomas.tanreisoftware.com/?p=11
+	
+*/
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		TARGET WEBKIT
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+	@media all and (min-width:0px) {
+	    body:not(:root:root) ___ { ... }
+	}

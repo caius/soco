@@ -1,0 +1,32 @@
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for GeSHi
+ * CSS class: geshi
+ * GeSHi (C) 2004 - 2007 Nigel McNie (http://qbnz.com/highlighter)
+ */
+.geshi .de1, .geshi .de2 {font-family: 'Courier New', Courier, monospace; font-weight: normal;}
+.geshi  {font-size: 1.1em;}
+.geshi .head {}
+.geshi .imp {font-weight: bold; color: red;}
+.geshi .ln-xtra {color: #cc0; background-color: #ffc;}
+.geshi li {font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;}
+.geshi li.li2 {font-weight: bold;}
+.geshi .kw1 {color:#9966CC; font-weight:bold;}
+.geshi .kw2 {color:#0000FF; font-weight:bold;}
+.geshi .kw3 {color:#CC0066; font-weight:bold;}
+.geshi .kw4 {color:#CC00FF; font-weight:bold;}
+.geshi .co1 {color:#008000; font-style:italic;}
+.geshi .coMULTI {color:#000080; font-style:italic;}
+.geshi .es0 {color:#000099;}
+.geshi .br0 {color:#006600; font-weight:bold;}
+.geshi .st0 {color:#996600;}
+.geshi .nu0 {color:#006666;}
+.geshi .me1 {color:#9900CC;}
+.geshi .sc0 {}
+.geshi .sc1 {}
+.geshi .sc2 {}
+.geshi .re0 {color:#ff6633; font-weight:bold;}
+.geshi .re1 {color:#0066ff; font-weight:bold;}
+.geshi .re2 {color:#6666ff; font-weight:bold;}
+.geshi .re3 {color:#ff3333; font-weight:bold;}

@@ -1,0 +1,22 @@
+/*
+	My Website 
+	PRINT STYLE SHEET
+
+	Used when a website is printed
+*/
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		BODY, WRAPPINGS, ANCHORS, anything sitewide
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	html {
+		font-family: Georgia, serif;
+		color: black;
+		background: white;
+		line-height: 1.6em;
+		}
+		
+		body {
+			width: 100%;
+			margin: 10px auto;
+			}

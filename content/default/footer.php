@@ -1,0 +1,1 @@
+<p>Powered by <a href="http://hentan.eu/php/Soco">Soco</a> and designed by <a href="http://caius.name/">Caius Durling</a></p>

@@ -1,0 +1,268 @@
+/*
+core.css
+Soco
+
+Created by Caius Durling <dev at caius dot name> on 2007-07-06.
+Copyright 2007 Hentan Software.
+Licenced under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 License.
+
+Selectors tabbed based on the structure of the HTML.
+The <body> is the child of <html> so should sit one 
+tab in from the html selector. This should be reset at 
+the beginning of each section for readability reasons.
+
+*/
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IMPORT ADDITIONAL SHEETS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@import url("./reset.css");
+@import url("./gecko.css");
+@import url("./webkit.css");
+@import url("./opera.css");
+@import url("./geshi.css");
+
+
+
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+BODY, WRAPPINGS, ANCHORS, anything sitewide
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/*  #content,*/
+/*  #header,*/
+/*  #sidebar,*/
+/*  #footer {*/
+  /*    display: none;*/
+  /*  }*/
+
+  html {
+    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    color: #000;
+  }
+
+  body {
+    width: 54em;
+    margin: 0 auto;
+    margin-left: 6em;
+    font-size: 75%;
+    line-height: 1.5em;
+    text-align: center;
+    background: #e5e5f4;
+  }
+
+  span#background {
+    position: fixed;
+    top: 4em;
+    left: 1em;
+    height: 32em;
+    width: 4em;
+    background: url(../images/hentan.png) no-repeat top left;
+  }
+
+  #page {
+    margin: 1.3125em auto;
+    margin-top: 0;
+    border: 3px solid #aaa;
+    padding: 1.5em; 
+    padding-bottom: 0;
+    background: #e5eef4;
+    min-height: 32em;
+  }
+
+  html>body {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 1.5em 0;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+
+  /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  HEADER
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  #header {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  #header h1 {
+    display: none;
+  }
+
+  #header #topbar ul li {
+    display: inline;
+  }
+
+  #header #topbar ul li a {
+    padding: 0.35em 1em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+  }
+
+  #header #topbar ul li a.active,
+  #header #topbar ul li a:hover,
+  #header #topbar ul li:hover a {
+    text-decoration: underline;
+    color: #000;
+    background: #FFFFE0;
+    position: relative;
+    top: 0.7em;
+    padding-top: 0.9em;
+  }
+
+  /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  CONTENT
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  #content {
+    width: 35em;
+    float: left;
+    padding: 0 1.5em;
+    /*  Hack to push footer down */
+    margin-bottom: 3em;
+    text-align: left;
+  }
+
+  #content h2 {
+    font-size: 1.5em;
+    color: #080;
+  }
+  
+  #content h3 {
+    margin: 0.75em 0;
+    font-size: 1.3em;
+    color: #080;
+  }
+
+  #content div.code {
+    font-family: Monaco, "Courier new", courier, sans-serif;
+    font-size: 0.7em;
+    line-height: 1.4em;
+    padding: 1em 1em;
+    background: #fff;
+  }
+  
+  #content pre {
+    overflow: auto;
+    padding-bottom: 0.5em;
+  }
+
+  #content div.code span.caption {
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+  }
+  
+  #content div.code span.caption a {
+    text-decoration: none;
+  }
+  
+  #content ol {
+    list-style-type: decimal;
+  }
+  
+  #content ul {
+    list-style-type: disc;
+  }
+  
+  #content ol,
+  #content ul {
+    margin: 1em;
+  }
+  
+  #content ol li,
+  #content ul li {
+    margin-left: 1em;
+  }
+
+
+  /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  sidebar
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  #sidebar {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #444;
+    padding: 1.5em 1em;
+    /*  Hack to push footer down */
+    margin-bottom: 3em;
+    float: right;
+  }
+  
+  #sidebar h4 {
+    font-weight: bold;
+    color: #050;
+  }
+
+  #sidebar ul.nav {
+    float: left;
+  }
+
+  #sidebar ul li {
+    margin-left: 1em;
+    list-style-type: disc;
+    text-align: left;
+  }
+
+  #sidebar ul>li>ul>li {
+    list-style-type: circle;
+  }
+
+  #sidebar ul>li>ul>li>ul>li {
+    list-style-type: square;
+  }
+  
+  #sidebar ul li,
+  #sidebar ul li a {
+    color: #115;
+  }
+  
+  #sidebar ul li a:hover,
+  #sidebar ul li a:active {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  #sidebar ul li:hover,
+  #sidebar ul>li.parent:hover>ul>li {
+    color: #900;
+  }
+
+
+  /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  FOOTER
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  #footer {
+    clear: both;
+    margin-top: 1.5em;
+    color: #555;
+    font-size: ;
+  }
+
+  #footer a,
+  #footer a:link,
+  #footer a:visited {
+    color: #777;
+  }
+
+  #footer a:active,
+  #footer a:focus,
+  #footer a:hover {
+    color: #000;
+  }

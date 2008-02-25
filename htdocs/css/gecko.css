@@ -1,0 +1,22 @@
+/*
+	My Website
+	GECKO TARGETTING STYLE SHEET
+	
+	Properties defined in this stylesheet using the selector 
+	provided will only effect rendering in Gecko based browsers
+	like FireFox, Camino, etc. Replace the ___ with your own 
+	selector and ... with your properties.
+	
+	Hack is valid CSS 3 and works as of 05/07/07
+	
+	Thanks to http://thomas.tanreisoftware.com/?p=11
+	
+*/
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		TARGET GECKO
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+	html:not([lang*=""]) ___ { ... }
+
+		

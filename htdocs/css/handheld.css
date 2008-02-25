@@ -1,0 +1,22 @@
+/*
+	My Website 
+	HANDHELD DEVICE STYLE SHEET
+
+	Will be used for and user agents than identify themselves 
+	as a handheld device.
+*/
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		BODY, WRAPPINGS, ANCHORS, anything sitewide
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	
+	html {
+		font-family: Verdana, Arial, sans-serif;
+		color: white;
+		background: black;
+		}
+		
+		body {
+			width: 200px;
+			margin: 10px auto;
+			}
